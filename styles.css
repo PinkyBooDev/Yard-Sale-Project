@@ -169,8 +169,13 @@ nav {
 /* mobile menu */
 
 .mobileMenu {
+  background-color: var(--white);
+  border: 1px solid var(--veryLightPink);
+  border-radius: 0 2rem 2rem 0;
   position: absolute;
   top: 6rem;
+  left: 0;
+  width: 100%;
   padding: 24px;
 }
 
@@ -215,12 +220,18 @@ nav {
 
 /* Cart */
 
-.productDetail {
+aside {
   background-color: var(--white);
+  border: 1px solid var(--veryLightPink);
+  border-radius: 2rem 0 0 2rem;
   width: 360px;
-  padding: 24px;
   position: absolute;
   right: 0;
+  top: 6rem;
+}
+
+#shoppingCartContainer {
+  padding: 24px;
 }
 
 .arrow {
@@ -305,6 +316,65 @@ nav {
   border: none;
 }
 
+/* Product Detail */
+
+#productDetail {
+  height: 100%;
+  border: 1px solid var(--veryLightPink);
+  border-radius: 0;
+}
+
+.closeProduct {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: var(--white);
+  padding: 0.7rem;
+  border-radius: 50%;
+}
+
+.closeProduct:hover {
+  cursor: pointer;
+}
+
+#productDetail figure > img:nth-child(2) {
+  width: 100%;
+  height: 36rem;
+  object-fit: cover;
+}
+
+#productDetail .productInfo {
+  margin: 24px 24px 0 24px;
+}
+
+#productDetail .productInfo p:nth-child(1) {
+  font-weight: bold;
+  font-size: var(--medium);
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+#productDetail .productInfo p:nth-child(2) {
+  color: var(--veryLightPink);
+  font-size: var(--medium);
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+
+#productDetail .productInfo p:nth-child(3) {
+  color: var(--veryLightPink);
+  font-size: var(--small);
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+
+.addToCart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
 /* main */
 
 .cards {
@@ -327,25 +397,25 @@ nav {
   object-fit: cover;
 }
 
-.productInfo figure img {
+.productCard .productInfo figure img {
   width: 35px;
   height: 35px;
 }
 
-.productInfo {
+.productCard .productInfo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 12px;
 }
 
-.productInfo div p:first-child {
+.productCard .productInfo div p:first-child {
   font-weight: bold;
   font-size: var(--medium);  
   margin: 0;
 }
 
-.productInfo div p:last-child {
+.productCard .productInfo div p:last-child {
   font-size: var(--small);
   margin: 0;
   color: var(--veryLightPink);
@@ -368,8 +438,9 @@ nav {
     display: none;
   }
 
-  .productDetail {
+  #productDetail {
     width: 100%;
+    border-radius: 0;
   }
 
   .cards {
