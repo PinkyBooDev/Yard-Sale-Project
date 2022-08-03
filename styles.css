@@ -422,6 +422,7 @@ aside {
 }
 
 @media (max-width: 1000px) {
+
   .iconMenu {
     display: block;
   }
@@ -451,5 +452,11 @@ aside {
 @media (min-width: 1001px) {
   .mobileMenu {
     display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  #shoppingCartContainer {
+    padding-left: 6rem;
   }
 }
