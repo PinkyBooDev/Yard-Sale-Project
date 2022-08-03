@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>nav</title>
+  <style>
+    :root {
+      /* Fonts */
+      --quicksandFont: 'Quicksand', sans-serif;
+      --small: 1.4rem;
+      --medium: 1.6rem;
+      --large: 1.8rem;
+      /* Colors */
+      --white: #FFFFFF;
+      --black: #000000;
+      --dark: #232830;
+      --veryLightPink: #C7C7C7;
+      --textInputField: #F7F7F7;
+      --hospitalGreen: #ACD9B2;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      font-family: var(--quicksandFont);
+      font-size: 1.6rem;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      text-align: end;
+    }
+
+    button {
+      transition-property: all;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+
+    /* main */
+    .desktopMenu {
+      width: 15rem;
+      height: auto;
+      border: 1px solid var(--veryLightPink);
+      border-radius: 6px;
+      padding: 2rem 2rem 0 2rem;
+    }
+
+    .title {
+      font-weight: bold;
+    }
+
+    .desktopMenu ul li:last-child {
+      padding-top: 1rem;
+      border-top: 1px solid var(--veryLightPink)
+    }
+
+    .desktopMenu ul li:last-child a {
+      color: var(--hospitalGreen);
+      font-size: var(--small);
+    }
+
+    .desktopMenu ul li a {
+      display: inline-block;
+      color: var(--black);
+      font-size: var(--small);
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="desktopMenu">
+    <ul>
+      <li>
+        <a href="/" class="title">My Orders</a>
+      </li>
+      <li>
+        <a href="/" class="title" >My accounts</a>
+      </li>
+      <li>
+        <a href="/" >Sign Out</a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

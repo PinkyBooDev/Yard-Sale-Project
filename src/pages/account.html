@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>Login</title>
+  <style>
+    /* Default Settings */
+    :root {
+      /* Fonts */
+      --quicksandFont: 'Quicksand', sans-serif;
+      --small: 1.4rem;
+      --medium: 1.6rem;
+      --large: 1.8rem;
+      /* Colors */
+      --white: #FFFFFF;
+      --black: #000000;
+      --dark: #232830;
+      --veryLightPink: #C7C7C7;
+      --textInputField: #F7F7F7;
+      --hospitalGreen: #ACD9B2;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      font-family: var(--quicksandFont);
+      font-size: 1.6rem;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    button {
+      transition-property: all;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+
+    .login {
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+
+    .formContainer {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      width: 30rem;
+    }
+
+    .title {
+      font-size: var(--large);
+      margin-bottom: 3.5rem;
+      text-align: start;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 12px;
+    }
+
+    .form div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form a {
+      color: var(--hospitalGreen);
+      font-size: var(--small);
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+
+    .label {
+      font-size: var(--small);
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .input {
+      background-color: var(--textInputField);
+      border: none;
+      border-radius: 8px;
+      padding: 6px;
+      height: 3rem;
+      font-size: var(--medium);
+      margin-bottom: 12px;
+    }
+
+    .inputName,
+    .inputEmail,
+    .inputPassword {
+      margin-bottom: 2.2rem;
+    }
+
+    .primaryButton {
+      cursor: pointer;
+      background-color: var(--hospitalGreen);
+      font-size: var(--medium);
+      font-weight: bold;
+      color: var(--white);
+      width: 100%;
+      height: 4rem;
+      border-radius: 8px;
+      border: none;
+    }
+
+    .secondaryButton {
+      cursor: pointer;
+      background-color: var(--white);
+      font-size: var(--medium);
+      font-weight: bold;
+      color: var(--hospitalGreen);
+      width: 100%;
+      height: 4rem;
+      border: 1px solid var(--hospitalGreen);
+      border-radius: 8px;
+    }
+
+    .loginButton {
+      margin: 14px 0 30px 0;
+    }
+
+    @media (max-width: 640px) {
+      .formContainer {
+        height: 100%;
+      }
+
+      .form {
+        height: 100%;
+        justify-content: space-between;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="login">
+    <div class="formContainer">
+      <h1 class="title">My Account</h1>
+      <form action="/" class="form">
+        <div>
+          <label for="name" class="label">Name</label>
+          <input type="text" id="name" placeholder="Camile Frances" class="input inputName">
+
+          <label for="email" class="label">Email address</label>
+          <input type="email" id="email" placeholder="example@gmail.com" class="input inputEmail">
+
+          <label for="password" class="label">Password</label>
+          <input type="password" id="password" placeholder="*********" class="input inputPassword">
+        </div>
+
+        <input type="submit" value="Create" class="primaryButton loginButton">
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>

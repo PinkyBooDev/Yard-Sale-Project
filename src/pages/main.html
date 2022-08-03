@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>Login</title>
+  <style>
+    /* Default Settings */
+    :root {
+      /* Fonts */
+      --quicksandFont: 'Quicksand', sans-serif;
+      --small: 1.4rem;
+      --medium: 1.6rem;
+      --large: 1.8rem;
+      /* Colors */
+      --white: #FFFFFF;
+      --black: #000000;
+      --dark: #232830;
+      --veryLightPink: #C7C7C7;
+      --textInputField: #F7F7F7;
+      --hospitalGreen: #ACD9B2;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      font-family: var(--quicksandFont);
+      font-size: 1.6rem;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    button {
+      transition-property: all;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+
+    /* main */
+    .cards {
+      --cardSize: 24rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, var(--cardSize));
+      gap: 3rem;
+      place-content: center;
+    }
+
+    .productCard {
+      width: var(--cardSize);
+    }
+
+    .productCard img {
+      width: var(--cardSize);
+      height: var(--cardSize);
+      border-radius: 2rem;
+      object-fit: cover;
+    }
+    
+    .productInfo figure img {
+      width: 35px;
+      height: 35px;
+    }
+
+    .productInfo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 12px;
+    }
+
+    .productInfo div p:first-child {
+      font-weight: bold;
+      font-size: var(--medium);  
+      margin: 0;
+    }
+
+    .productInfo div p:last-child {
+      font-size: var(--small);
+      margin: 0;
+      color: var(--veryLightPink);
+    }
+
+    @media (max-width: 640px) {
+      .cards {
+        --cardSize: 14rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="main">
+    <div class="cards">
+
+      <div class="productCard">
+        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        <div class="productInfo">
+          <div>
+            <p>$120,00</p>
+            <p>Bike</p>
+          </div>
+          <figure>
+            <img src="../assets/icons/bt_add_to_cart.svg" alt="Add to Cart">
+          </figure>
+        </div>
+      </div>
+      <div class="productCard">
+        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        <div class="productInfo">
+          <div>
+            <p>$120,00</p>
+            <p>Bike</p>
+          </div>
+          <figure>
+            <img src="../assets/icons/bt_add_to_cart.svg" alt="Add to Cart">
+          </figure>
+        </div>
+      </div>
+      <div class="productCard">
+        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        <div class="productInfo">
+          <div>
+            <p>$120,00</p>
+            <p>Bike</p>
+          </div>
+          <figure>
+            <img src="../assets/icons/bt_add_to_cart.svg" alt="Add to Cart">
+          </figure>
+        </div>
+      </div>
+      <div class="productCard">
+        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        <div class="productInfo">
+          <div>
+            <p>$120,00</p>
+            <p>Bike</p>
+          </div>
+          <figure>
+            <img src="../assets/icons/bt_add_to_cart.svg" alt="Add to Cart">
+          </figure>
+        </div>
+      </div>
+      <div class="productCard">
+        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        <div class="productInfo">
+          <div>
+            <p>$120,00</p>
+            <p>Bike</p>
+          </div>
+          <figure>
+            <img src="../assets/icons/bt_add_to_cart.svg" alt="Add to Cart">
+          </figure>
+        </div>
+      </div>
+      <div class="productCard">
+        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        <div class="productInfo">
+          <div>
+            <p>$120,00</p>
+            <p>Bike</p>
+          </div>
+          <figure>
+            <img src="../assets/icons/bt_add_to_cart.svg" alt="Add to Cart">
+          </figure>
+        </div>
+      </div>
+      <div class="productCard">
+        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        <div class="productInfo">
+          <div>
+            <p>$120,00</p>
+            <p>Bike</p>
+          </div>
+          <figure>
+            <img src="../assets/icons/bt_add_to_cart.svg" alt="Add to Cart">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section> 
+</body>
+
+</html>

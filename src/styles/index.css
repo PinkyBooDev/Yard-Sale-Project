@@ -1,0 +1,48 @@
+/* Default Settings */
+:root{
+  /* Fonts */
+  --quicksandFont: 'Quicksand', sans-serif;
+  /* Colors */
+  --white: #FFFFFF;
+  --black: #000000;
+  --dark: #232830;
+  --veryLightPink: #C7C7C7;
+  --textInputField: #F7F7F7;
+  --hospitalGreen: #ACD9B2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--quicksandFont);
+  font-size: 1.6rem;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* header */

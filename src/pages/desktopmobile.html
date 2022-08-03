@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>nav</title>
+  <style>
+    :root {
+      /* Fonts */
+      --quicksandFont: 'Quicksand', sans-serif;
+      --small: 1.4rem;
+      --medium: 1.6rem;
+      --large: 1.8rem;
+      /* Colors */
+      --white: #FFFFFF;
+      --black: #000000;
+      --dark: #232830;
+      --veryLightPink: #C7C7C7;
+      --textInputField: #F7F7F7;
+      --hospitalGreen: #ACD9B2;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      font-family: var(--quicksandFont);
+      font-size: 1.6rem;
+    }
+
+    a {
+      color: var(--black);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+      margin: 24px 0 0;
+    }
+
+    button {
+      transition-property: all;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+
+    /* main */
+    .mobileMenu {
+      padding: 24px;
+    }
+
+    .mobileMenu ul li {
+      margin-bottom: 24px;
+    }
+
+    .mobileMenu ul:nth-child(1) {
+      border-bottom: 1px solid var(--veryLightPink);
+    }
+
+    .mobileMenu ul:last-child {
+      position: absolute;
+      bottom: 0;
+    }
+    
+    .email {
+      font-weight: 300;
+      font-size: var(--medium);
+    }
+    
+    .title {
+      font-weight: bold;
+    }
+    
+    .signOut {
+      font-size: var(--small);
+      color: var(--hospitalGreen);
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="mobileMenu">
+    <h2 class="title">CATEGORIES</h2>
+    <section>
+        <ul>
+          <li>
+            <a href="/">All</a>
+          </li>
+          <li>
+            <a href="/">Clothes</a>
+          </li>
+          <li>
+            <a href="/">Electronics</a>
+          </li>
+          <li>
+            <a href="/">Furnitures</a>
+          </li>
+          <li>
+            <a href="/">Toys</a>
+          </li>
+          <li>
+            <a href="/">Others</a>
+          </li>
+        </ul>
+        
+        <ul>
+          <li>
+            <a href="/" class="title">My Orders</a>
+          </li>
+          <li>
+            <a href="/" class="title" >My accounts</a>
+          </li>
+        </ul>
+    
+        <ul>
+          <li><p class="email">example@email.com</p></li>
+          <li>
+            <a href="/" class="signOut">Sign Out</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+</body>
+</html>

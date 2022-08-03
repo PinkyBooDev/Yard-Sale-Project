@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>nav</title>
+  <style>
+    :root {
+      /* Fonts */
+      --quicksandFont: 'Quicksand', sans-serif;
+      --small: 1.4rem;
+      --medium: 1.6rem;
+      --large: 1.8rem;
+      /* Colors */
+      --white: #FFFFFF;
+      --black: #000000;
+      --dark: #232830;
+      --veryLightPink: #C7C7C7;
+      --textInputField: #F7F7F7;
+      --hospitalGreen: #ACD9B2;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      font-family: var(--quicksandFont);
+      font-size: 1.6rem;
+    }
+
+    a {
+      color: var(--black);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+      margin: 24px 0 0;
+    }
+
+    button {
+      transition-property: all;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+
+    /* main */
+    .myOrder {
+      display: grid;
+      width: 100%;
+      height: 100vh;
+      place-items: center;
+    }
+
+    .title {
+      font-size: var(--large);
+      margin-bottom: 3rem;
+    }
+
+    .mainContainer {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      width: 40%;
+    }
+
+    .orderContent {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .shoppingCart {
+      display: grid;
+      grid-template-columns: auto 1fr auto auto;
+      gap: 16px;
+      margin-bottom: 24px;
+      align-items: center;
+    }
+
+    .shoppingCart figure img {
+      width: 7rem;
+      height: 7rem;
+      border-radius: 2rem;
+      object-fit: cover;
+    }
+
+    .shoppingCart p:nth-child(2) {
+      color: var(--veryLightPink);
+    }
+
+    .shoppingCart p:nth-child(3) {
+      font-size: var(--medium);
+      font-weight: bold;
+    }
+
+    .order {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 16px;
+      align-items: center;
+      background-color: var(--textInputField);
+      margin-bottom: 2.4rem;
+      border-radius: 8px;
+      padding: 0 24px;
+      height: 5rem;
+    }
+
+    .order p:nth-child(1) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .order p:nth-child(2) {
+      text-align: end;
+      font-weight: bold;
+    }
+
+    .order p span:nth-child(1) {
+      font-size: var(--medium);
+      font-weight: bold;
+    }
+
+    .order p span:nth-child(2) {
+      font-size: var(--small);
+      color: var(--veryLightPink);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="myOrder">
+    <section class="mainContainer">
+      <h1 class="title">My order</h1>
+      <section class="orderContent">
+        <div class="order">
+          <p>
+            <span>03.25.21</span>
+            <span>6 articles</span>
+          </p>
+          <p>$560.00</p>
+        </div>
+
+        <section class="shoppingCart">
+          <figure>
+            <img
+              src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="bike">
+          </figure>
+          <p>Bike</p>
+          <p>$30,00</p>
+        </section>
+        <section class="shoppingCart">
+          <figure>
+            <img
+              src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="bike">
+          </figure>
+          <p>Bike</p>
+          <p>$30,00</p>
+        </section>
+        <section class="shoppingCart">
+          <figure>
+            <img
+              src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="bike">
+          </figure>
+          <p>Bike</p>
+          <p>$30,00</p>
+        </section>
+      </section>
+    </section>
+  </main>
+</body>
+
+</html>
